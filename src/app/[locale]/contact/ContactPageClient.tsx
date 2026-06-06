@@ -27,16 +27,15 @@ export default function ContactPageClient({ locale }: ContactPageClientProps) {
     message: '',
   });
 
-  const contactMethods = [
-    {
-      icon: Mail,
-      title: t('methods.email.title'),
-      description: t('methods.email.description'),
-      action: t('methods.email.action'),
-      href: 'mailto:contact@pdfcraft.gitu.net',
-    },
-    // GitHub 和 Twitter 的联系方式已移除
-  ];
+const contactMethods = [
+  {
+    icon: Mail,
+    title: t('methods.email.title'),
+    description: t('methods.email.description'),
+    action: t('methods.email.action'),
+    href: 'mailto:contact@nexalo.ai',
+  },
+];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
